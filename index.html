@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BazaarBuddy – Vendor Assistant</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🛒 BazaarBuddy</h1>
+  <p>Speak a product name in Hindi (e.g. "pyaz")</p>
+  <button onclick="startVoice()">🎙️ Speak Product Name</button>
+  <p id="output">Awaiting voice input...</p>
+
+  <!-- Firebase SDKs -->
+  <script type="module" src="https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js"></script>
+
+  <!-- Your Firebase setup and app logic -->
+  <script type="module" src="./firebase.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
